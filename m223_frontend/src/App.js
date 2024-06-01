@@ -1,10 +1,11 @@
 import Register from './Register';
+import login from './login';
 
 function App(){
   
   return (
     <main className="App">
-      <Register/>
+      <Login/>
     </main>
   );
 }
