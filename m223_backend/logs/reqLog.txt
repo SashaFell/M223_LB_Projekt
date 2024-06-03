@@ -1,0 +1,88 @@
+20240602	23:43:15	ffcb17f3-bb2d-4133-93ba-2075248f78a9	/data/new-page	GET
+20240602	23:43:15	e7830993-2fb5-4e11-9f57-63512210a2ad	/css/style.css	GET
+20240602	23:44:16	23ed4ccf-4624-4f2d-b7c1-d3558e46c6c7	/data/old-page	GET
+20240602	23:44:16	a75f84e8-1f1c-4b7d-8f8a-54d335d969cd	/new-page.html	GET
+20240602	23:44:16	cc8bab43-bbfb-488d-a364-30808d0aef20	/css/style.css	GET
+20240602	23:44:16	69c9efc7-5cdc-480a-be78-bf91f5ccc5c6	/img/img1.jpg	GET
+20240602	23:45:02	60749700-b88d-4b45-90c9-305101139d6d	/new-page.html	GET
+20240602	23:45:21	0c9bd2bb-32a2-4e1a-83d0-6dbdce014d36	/new-page.html	GET
+20240602	23:45:21	a297a4de-05b1-4818-869a-02f597432fde	/css/style.css	GET
+20240602	23:45:21	8e9ae893-ee73-40b1-9703-6528e3d90375	/img/img1.jpg	GET
+20240602	23:46:11	48fa494e-5a84-4599-8b21-aff5aa6c0518	/	GET
+20240602	23:46:11	8576e649-f368-46b5-8a3e-aeaabc9766a1	/css/style.css	GET
+20240603	00:12:52	4d031ca5-53a7-4119-8f8c-ec9842aaa13f	GET	undefined	/
+20240603	00:12:52	9043d979-f464-4f6a-823c-4143e195666f	GET	undefined	/css/style.css
+20240603	00:17:40	23e128d4-3c29-4cb9-9b11-fd0201aa765d	GET	undefined	/subdir/
+20240603	00:17:40	06cd16cb-d835-4cd3-b54d-a7c9b3a417e0	GET	undefined	/subdir/css/style.css
+20240603	00:17:57	8431604c-8d58-4ed1-b2c6-6b1c72e2163d	GET	undefined	/subdir
+20240603	00:17:57	97d58fb2-078e-450b-95af-471b70d77f78	GET	undefined	/subdir/
+20240603	00:17:57	734e5500-4aa2-4300-aac5-e4aeb5832a37	GET	undefined	/subdir/css/style.css
+20240603	00:18:21	d348b729-c9be-46ab-b6dd-72ed2717bf67	GET	undefined	/subdir/test.html
+20240603	00:18:21	0f4a51a7-7ce1-493b-bbd7-7c1284527b75	GET	undefined	/subdir/css/style.css
+20240603	00:19:18	9f109c0e-478c-47b1-b818-f43c6445294d	GET	undefined	/subdir/test.html
+20240603	00:19:26	b99bd59f-52b4-41e9-b31a-a2bb75bc3755	GET	undefined	/subdir/
+20240603	00:20:11	6685ded3-a56c-41db-9ed3-c0f56268a912	GET	undefined	/subdir/test.html
+20240603	00:21:14	94c9353c-0d42-490b-8caa-cf3182876324	GET	undefined	/subdir/test.html
+20240603	00:21:14	9b288152-d425-4df8-b1a5-b6fd9ede1efd	GET	undefined	/subdir/css/style.css
+20240603	00:21:35	8a10dd94-0dab-4a5e-b53e-87ac41070b23	GET	undefined	/subdir/
+20240603	00:21:35	54f61491-1e08-4da5-aec7-4daa619b00d9	GET	undefined	/subdir/css/style.css
+20240603	00:25:58	51796ecc-9f05-407b-a3c3-598744759046	GET	undefined	/subdir/
+20240603	00:26:13	e14b40f2-575b-4560-a17f-dc97fc032455	GET	undefined	/
+20240603	00:26:13	87661d5d-f81c-43d0-8e49-7aa02cf5e9b8	GET	undefined	/css/style.css
+20240603	00:26:29	7148a23c-834e-4b4a-bae8-edbc728d860b	GET	undefined	/new-page
+20240603	00:26:29	f74a4d0b-4fb8-43ca-9770-b6390be9b963	GET	undefined	/css/style.css
+20240603	00:26:29	fb18b5ab-af56-427a-97a0-75482349b894	GET	undefined	/img/img1.jpg
+20240603	00:26:48	5c6fbd3b-84be-4e47-bd88-3721f5218db7	GET	undefined	/old-page
+20240603	00:26:48	f0c72791-1ee2-4e77-8469-ef74bbd6a951	GET	undefined	/new-page.html
+20240603	00:26:48	ceaaf095-b70e-4985-a362-67a60afab87c	GET	undefined	/css/style.css
+20240603	00:26:48	3f59ea67-4884-4648-a850-ac02c009b4c6	GET	undefined	/img/img1.jpg
+20240603	00:26:54	4e70d4c8-dcd8-4cce-bcc9-bb09f4c4ac16	GET	undefined	/index
+20240603	00:26:54	fe3002a0-6117-4303-ba83-0109fb200865	GET	undefined	/css/style.css
+20240603	00:34:56	1c56c234-2a2e-4689-86c9-be289d558536	GET	undefined	/employees
+20240603	00:36:01	f8110055-df3a-402c-b949-d8b73c118d02	POST	undefined	/employees
+20240603	00:37:05	4f5dff4a-10ad-4011-8088-67634b07fc95	PUT	undefined	/employees
+20240603	00:37:48	bb51bda4-02e3-4b24-8a48-02562ee0c632	DELETE	undefined	/employees
+20240603	00:38:12	b47d5d87-c168-497d-8849-ba86ddde880c	GET	undefined	/employees/1
+20240603	00:39:00	150f4b6a-67e9-4b8d-b7ac-368eebafee27	GET	undefined	/index
+20240603	00:39:00	94883e5b-f415-44c1-b173-fea53f9b475b	GET	undefined	/css/style.css
+20240603	00:39:10	4dbd4fe1-a61c-4048-8995-d6fbd95c8a3d	GET	undefined	/new-page
+20240603	00:39:10	0af3329b-f644-4763-a8fd-ab711824b13b	GET	undefined	/css/style.css
+20240603	00:39:10	36f90747-5a92-46a1-8c9b-4c06d889ae7f	GET	undefined	/img/img1.jpg
+20240603	00:55:10	63911b21-1c17-4021-9f58-79d56f4179b7	GET	undefined	/new-page
+20240603	00:55:10	02b88329-0e8f-42d2-a16f-6815ce09535e	GET	undefined	/css/style.css
+20240603	00:55:16	97542194-2d8f-4e66-a11e-946b4d4454ef	GET	undefined	/
+20240603	00:55:16	cf4b7d24-aa52-4824-b5c4-2ecbec990f2b	GET	undefined	/css/style.css
+20240603	00:55:32	d1d24279-02f0-4681-a7f7-6fa4993d95aa	GET	undefined	/employees
+20240603	00:55:49	07db078f-f59e-4163-95ab-0cc622dc42a3	POST	undefined	/employees
+20240603	00:56:16	db1c5850-c6d8-43b5-8f0b-dc71f48fd32a	PUT	undefined	/employees
+20240603	00:56:59	801a50fc-c3ce-4940-b0e2-36c636ea4814	DELETE	undefined	/employees
+20240603	00:57:10	c4bb833b-a7ec-4eee-8b44-b5de0dec0749	POST	undefined	/employees
+20240603	00:57:16	9c95e65c-0b2f-455b-b976-ddfc210fb168	DELETE	undefined	/employees
+20240603	00:57:22	4434abb7-98ab-4f14-81af-bf5d9b4dc3b6	DELETE	undefined	/employees
+20240603	00:57:27	71a1c6ae-8a52-446a-9c34-587cebf4d704	GET	undefined	/employees
+20240603	00:57:30	4300d725-7308-4e1c-8ab8-6c845eec5370	POST	undefined	/employees
+20240603	00:57:32	bd666938-1cce-4821-a4ca-e92efe03f9f1	GET	undefined	/employees
+20240603	01:08:10	44f6f453-151b-4b9b-8b98-1eb39518cbbc	POST	undefined	/auth
+20240603	01:08:22	0d5553f1-8372-4922-b88d-cd4c02775a73	POST	undefined	/register
+20240603	01:08:27	66667350-2f05-4558-a909-974e0a5c96ea	POST	undefined	/register
+20240603	01:09:30	5b3c174a-2bc8-40fc-bbd2-9ebc88a47515	POST	undefined	/register
+20240603	01:12:33	b331668a-cac0-4172-b936-d4937e82ad82	POST	undefined	/auth
+20240603	01:12:42	7b04d699-73e7-4586-b913-306ba3c39392	POST	undefined	/auth
+20240603	01:12:52	5ce1eb22-d392-4774-8e1a-043b493d6967	POST	undefined	/auth
+20240603	01:12:58	8ffa65b7-70e4-44f0-bab3-89b0fbd6dfbd	POST	undefined	/auth
+20240603	01:13:23	d086a1b0-3f7b-4cfb-82fb-6cb60ca35e3b	POST	undefined	/register
+20240603	01:13:28	ee3c9087-445b-42b3-a126-48d68f517392	POST	undefined	/register
+20240603	01:34:42	3e0ee387-70cf-46e4-9435-217957ad442d	POST	undefined	/auth
+20240603	01:35:14	3d145a63-474a-4c6a-9112-778c08cd5098	GET	undefined	/logout
+20240603	01:35:23	420ba745-0376-49ec-ba33-a3d37e51e80c	GET	undefined	/logout
+20240603	01:35:55	3b3abbed-bcfd-4635-9e74-fb997a7c24ba	GET	undefined	/refresh
+20240603	01:36:05	3ff56822-02ac-414e-bf47-84b49aeed902	POST	undefined	/auth
+20240603	01:36:09	43e5ee1c-bd11-4c53-9535-2df9daca1087	GET	undefined	/refresh
+20240603	01:37:29	fe589744-0b66-47e4-b394-cf7736f7a326	GET	undefined	/refresh
+20240603	01:37:35	763e9662-743f-4ccb-8654-010100cd4663	POST	undefined	/auth
+20240603	02:03:10	af09e144-51f6-450c-b6e2-0b9ab982576e	POST	undefined	/auth
+20240603	02:03:33	aa7fa7a0-2e57-400e-9854-1cd415706af0	GET	undefined	/employees
+20240603	02:04:25	f6169e07-c7a4-4c85-84a2-cdb3a919735e	POST	undefined	/auth
+20240603	02:04:40	9fd7bd76-ae19-41bf-b03f-f2ea35d090b2	POST	undefined	/employees
+20240603	02:04:53	738c50e1-7ddd-487d-98e1-6edaccc1039d	DELETE	undefined	/employees
+20240603	02:05:00	fe882f4c-6d97-4eba-a42a-e49e3359f4b1	DELETE	undefined	/employees
