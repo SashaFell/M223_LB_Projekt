@@ -1,35 +1,41 @@
-const usersDB = {
-    users: require('../model/users.json'),
-    setUsers: function (data) { this.users = data }
-}
-const fsPromises = require('fs').promises;
-const path = require('path');
+const { sequelize } = require('../config/dbConn'); // Importieren Sie die Verbindung zu Ihrer MySQL-Datenbank
 
 const handleLogout = async (req, res) => {
-    // On client, also delete the accessToken
-
+    // Auf dem Client auch den accessToken löschen
     const cookies = req.cookies;
-    if (!cookies?.jwt) return res.sendStatus(204); //No content
+    if (!cookies?.jwt) return res.sendStatus(204); // Kein Inhalt
     const refreshToken = cookies.jwt;
 
-    // Is refreshToken in db?
-    const foundUser = usersDB.users.find(person => person.refreshToken === refreshToken);
-    if (!foundUser) {
+    try {
+        // Überprüfen, ob das Refresh-Token in der Datenbank vorhanden ist
+        const [users, metadata] = await sequelize.query('SELECT * FROM users WHERE refreshToken = :refreshToken', {
+            replacements: { refreshToken }
+        });
+
+        // Wenn kein Benutzer mit dem übergebenen Refresh-Token gefunden wurde, löschen Sie das Cookie und senden Sie 204 zurück
+        if (!users || users.length === 0) {
+            res.clearCookie('jwt', { httpOnly: true, sameSite: 'None', secure: true });
+            return res.sendStatus(204);
+        }
+
+        // Löschen Sie das Refresh-Token in der Datenbank
+        const [updatedRows, updateMetadata] = await sequelize.query('UPDATE users SET refreshToken = "" WHERE refreshToken = :refreshToken', {
+            replacements: { refreshToken }
+        });
+
+        // Überprüfen Sie, ob das Refresh-Token erfolgreich gelöscht wurde
+        if (updatedRows === 0) {
+            // Wenn keine Zeilen aktualisiert wurden, senden Sie einen Fehlerstatus zurück
+            return res.status(500).send('Failed to logout');
+        }
+
+        // Löschen Sie das Cookie und senden Sie 204 zurück
         res.clearCookie('jwt', { httpOnly: true, sameSite: 'None', secure: true });
-        return res.sendStatus(204);
+        res.sendStatus(204);
+    } catch (error) {
+        console.error('Error while handling logout:', error);
+        res.sendStatus(500);
     }
+};
 
-    // Delete refreshToken in db
-    const otherUsers = usersDB.users.filter(person => person.refreshToken !== foundUser.refreshToken);
-    const currentUser = { ...foundUser, refreshToken: '' };
-    usersDB.setUsers([...otherUsers, currentUser]);
-    await fsPromises.writeFile(
-        path.join(__dirname, '..', 'model', 'users.json'),
-        JSON.stringify(usersDB.users)
-    );
-
-    res.clearCookie('jwt', { httpOnly: true, sameSite: 'None', secure: true });
-    res.sendStatus(204);
-}
-
-module.exports = { handleLogout }
+module.exports = { handleLogout };

@@ -1,4 +1,12 @@
+require('dotenv').config();
+const { connectDB, sequelize } = require ('./config/dbConn');
+const Employee = require('./model/Employee');
+const User = require('./model/User');
+
 const express = require('express');
+
+const mysql = require('mysql');
+
 const app = express();
 const path = require('path');
 const cors = require('cors');
@@ -55,4 +63,15 @@ app.all('*', (req, res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const startServer = async () => {
+    try {
+        await connectDB();
+        await sequelize.sync(); // Synchronisiert alle definierten Modelle mit der Datenbank
+        app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    } catch (err) {
+        console.error("Failed to connect to the database", err);
+        process.exit(1); // Exit the process with a failure code
+    }
+};
+
+startServer();
